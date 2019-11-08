@@ -45,11 +45,7 @@ class BinarySearchTree {
     void inorder()  { 
        inorderRec(root); 
     } 
-	
-	
-  
-  
-    void inorderRec(Node root) { 
+	void inorderRec(Node root) { 
         if (root != null) {
 			inorderRec(root.left); 
             System.out.println(root.key); 
