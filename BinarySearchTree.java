@@ -45,10 +45,7 @@ class BinarySearchTree {
     void inorder()  { 
        inorderRec(root); 
     } 
-	void preorder()
-	{
-		preorder(root);
-	}
+	
 	void postorder()
 	{
 		postorder(root);
@@ -62,15 +59,19 @@ class BinarySearchTree {
             inorderRec(root.right); 
         } 
     } 
-	void  preorder(Node root)
-	{
-		if(root!=null)
-		{
-			System.out.println(root.key);
-			preorder(root.left);
-			preorder(root.right);
-		}
-	}
+	 void preorder()
+    {
+        preorder(root);
+    }
+    void  preorder(Node root)
+    {
+        if(root!=null)
+        {
+            System.out.println(root.key);
+            preorder(root.left);
+            preorder(root.right);
+        }
+    }
 	void  postorder(Node root)
 	{
 		if(root != null)
