@@ -46,10 +46,7 @@ class BinarySearchTree {
        inorderRec(root); 
     } 
 	
-	void postorder()
-	{
-		postorder(root);
-	}
+	
   
   
     void inorderRec(Node root) { 
@@ -72,6 +69,10 @@ class BinarySearchTree {
             preorder(root.right);
         }
     }
+	 void postorder()
+	{
+		postorder(root);
+	}
 	void  postorder(Node root)
 	{
 		if(root != null)
